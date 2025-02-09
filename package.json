@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rollup -c"
   },
-  "keywords": [],
+"keywords": ["toggle", "button", "react", "custom toggle button", "switch", "react component", "UI", "toggle switch", "taiwind"],
   "author": "Rohan Thomas Reji",
   "license": "ISC",
   "description": "Dynamic Toggle Button",
