@@ -10,7 +10,11 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "Dynamic Toggle Button",
+   "repository": {
+    "type": "git",
+    "url": "https://github.com/rohxnn/toggle-button1"
+  },
   "dependencies": {
     "custom-toggle-button1": "github:rohxnn/toggle-button1",
     "react": "^19.0.0",
