@@ -8,7 +8,7 @@
     "build": "rollup -c"
   },
   "keywords": [],
-  "author": "",
+  "author": "Rohan Thomas Reji",
   "license": "ISC",
   "description": "Dynamic Toggle Button",
   "repository": {
