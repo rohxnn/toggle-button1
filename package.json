@@ -1,42 +1,31 @@
 {
-  "name": "custom-toggle-button1",
+  "name": "custom-toggle-button",
   "version": "1.1.6",
-  "main": "dist/index.js",
-  "type": "module",
+  "main": "dist/index.js",  
+  "module": "dist/index.esm.js",  
+  "types": "dist/index.d.ts",  
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rollup -c"
   },
-  "keywords": [
-    "toggle",
-    "button",
-    "react",
-    "custom toggle button",
-    "switch",
-    "react component",
-    "UI",
-    "toggle switch",
-    "tailwind"
-  ],
-  "author": "Rohan Thomas Reji",
-  "license": "ISC",
-  "description": "Dynamic Toggle Button",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/rohxnn/toggle-button1"
-  },
-  "peerDependencies": {
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+  "dependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^28.0.2",
     "@rollup/plugin-node-resolve": "^16.0.0",
     "@rollup/plugin-typescript": "^12.1.2",
-    "@types/react": "^19.0.8",
-    "@types/react-dom": "^19.0.3",
     "rollup": "^4.34.6",
     "rollup-plugin-dts": "^6.1.1",
     "typescript": "^5.7.3"
-  }
+  },
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ]
 }
