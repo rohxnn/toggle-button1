@@ -1,9 +1,14 @@
+import resolve from "@rollup/plugin-node-resolve";
+import commonjs from "@rollup/plugin-commonjs";
+import typescript from "@rollup/plugin-typescript";
+import dts from "rollup-plugin-dts";
+
 export default [
   {
-    input: "src/index.ts",  
+    input: "src/index.ts",
     output: [
       {
-        file: "dist/index.d.ts",
+        file: "dist/index.js",
         format: "cjs",
         sourcemap: true
       },
@@ -17,8 +22,8 @@ export default [
     external: ["react", "react-dom"]
   },
   {
-    input: "src/index.d.ts", 
-    output: [{ file: "dist/index.d.ts", format: "es" }],
+    input: "src/index.ts",
+    output: [{ file: "dist/types/index.d.ts", format: "es" }],
     plugins: [dts()]
   }
 ];
