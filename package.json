@@ -6,10 +6,11 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "rollup -c",
-    "postinstall": "mkdir -p src/components && cp -r node_modules/custom-toggle-button1/dist src/components/custom-toggle-button1"
+    "postinstall": "node copyComponent.js"
   },
   "dependencies": {
     "custom-toggle-button1": "file:",
+    "fs-extra": "^11.3.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0"
   },
