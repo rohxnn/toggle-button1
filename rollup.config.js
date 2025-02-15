@@ -1,11 +1,6 @@
-import resolve from "@rollup/plugin-node-resolve";
-import commonjs from "@rollup/plugin-commonjs";
-import typescript from "@rollup/plugin-typescript";
-import dts from "rollup-plugin-dts";
-
 export default [
   {
-    input: "src/ToggleButton.tsx",
+    input: "src/index.ts",  
     output: [
       {
         file: "dist/index.js",
@@ -22,7 +17,7 @@ export default [
     external: ["react", "react-dom"]
   },
   {
-    input: "dist/types/ToggleButton.d.ts",
+    input: "src/index.ts", 
     output: [{ file: "dist/index.d.ts", format: "es" }],
     plugins: [dts()]
   }
