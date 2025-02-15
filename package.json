@@ -6,6 +6,7 @@
   "types": "dist/types/index.d.ts",
   "scripts": {
     "build": "rollup -c",
+    "prepare": "npm run build",
     "postinstall": "node scripts/postinstall.js"
   },
   "dependencies": {
@@ -29,6 +30,7 @@
   "files": [
     "dist",
     "README.md",
-    "scripts"
+    "scripts",
+    "src"
   ]
 }
