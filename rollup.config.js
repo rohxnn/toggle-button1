@@ -3,7 +3,7 @@ export default [
     input: "src/index.ts",  
     output: [
       {
-        file: "dist/index.js",
+        file: "dist/index.d.ts",
         format: "cjs",
         sourcemap: true
       },
@@ -17,7 +17,7 @@ export default [
     external: ["react", "react-dom"]
   },
   {
-    input: "src/index.ts", 
+    input: "src/index.d.ts", 
     output: [{ file: "dist/index.d.ts", format: "es" }],
     plugins: [dts()]
   }
