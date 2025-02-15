@@ -8,6 +8,7 @@
     "build": "rollup -c"
   },
   "dependencies": {
+    "custom-toggle-button1": "file:",
     "react": "^18.0.0",
     "react-dom": "^18.0.0"
   },
@@ -25,6 +26,7 @@
   },
   "files": [
     "dist",
+    "src",
     "README.md",
     "LICENSE"
   ]
