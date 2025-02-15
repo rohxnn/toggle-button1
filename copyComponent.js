@@ -1,16 +1,18 @@
-const fs = require("fs");
+#!/usr/bin/env node
+
+const fs = require("fs-extra");
 const path = require("path");
-const fse = require("fs-extra"); // Ensures cross-platform copying
 
-const source = path.join(__dirname, "node_modules", "custom-toggle-button1", "dist");
-const destination = path.join(__dirname, "src", "components", "custom-toggle-button1");
+const projectRoot = process.cwd(); // Gets the project where the package is installed
+const packageName = "custom-toggle-button1"; // Your package name
 
-// Create destination folder if it doesn't exist
-if (!fs.existsSync(destination)) {
-    fs.mkdirSync(destination, { recursive: true });
-}
+const sourceDir = path.join(projectRoot, "node_modules", packageName, "dist"); // Source (installed package)
+const destinationDir = path.join(projectRoot, "src", "components", packageName"); // Destination (user's project)
 
-// Copy the files
-fse.copy(source, destination)
-    .then(() => console.log("✅ Component copied to src/components/custom-toggle-button1"))
-    .catch(err => console.error("❌ Error copying component:", err));
+// Ensure destination folder exists
+fs.ensureDirSync(destinationDir);
+
+// Copy files from node_modules to src/components
+fs.copy(sourceDir, destinationDir)
+  .then(() => console.log(`✅ Copied ${packageName} to ${destinationDir}`))
+  .catch((err) => console.error(`❌ Error copying ${packageName}:`, err));
