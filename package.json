@@ -6,7 +6,7 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "rollup -c",
-    "postinstall": "node copyComponent.js"
+    "postinstall": "node  ./copyComponent.js"
   },
   "dependencies": {
     "custom-toggle-button1": "file:",
