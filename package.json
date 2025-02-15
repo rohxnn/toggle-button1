@@ -1,24 +1,25 @@
 {
   "name": "custom-toggle-button1",
-  "version": "1.1.22",
+  "version": "1.1.20",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
-  "types": "dist/types/index.d.ts",
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "rollup -c",
-    "prepare": "npm run build",
-    "postinstall": "node scripts/postinstall.js"
+    "prepare": "npm run build"
   },
   "dependencies": {
     "custom-toggle-button1": "file:",
-    "fs-extra": "^11.3.0",
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+    "fs-extra": "^11.3.0"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^28.0.2",
     "@rollup/plugin-node-resolve": "^16.0.0",
     "@rollup/plugin-typescript": "^12.1.2",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
     "rollup": "^4.34.6",
     "rollup-plugin-dts": "^6.1.1",
     "typescript": "^5.7.3"
@@ -29,8 +30,6 @@
   },
   "files": [
     "dist",
-    "README.md",
-    "scripts",
-    "src"
+    "README.md"
   ]
 }

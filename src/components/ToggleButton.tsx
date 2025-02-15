@@ -1,6 +1,6 @@
 import React from "react";
 
-interface ToggleButtonProps {
+export interface ToggleButtonProps {
   values: { name: string; value: string | number }[];
   defaultValue?: string | number;
   value?: string | number;
@@ -9,7 +9,7 @@ interface ToggleButtonProps {
   h?: number;
 }
 
-const ToggleButton: React.FC<ToggleButtonProps> = ({
+export const ToggleButton: React.FC<ToggleButtonProps> = ({
   values,
   defaultValue,
   value,
@@ -38,5 +38,3 @@ const ToggleButton: React.FC<ToggleButtonProps> = ({
     </div>
   );
 };
-
-export default ToggleButton;
